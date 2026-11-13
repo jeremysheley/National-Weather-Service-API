@@ -1,4 +1,4 @@
-Coding Challenge
+**Coding Challenge**
 
 Write software, work with an API, and store it in a data store
 
