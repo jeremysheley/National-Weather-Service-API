@@ -4,8 +4,8 @@ Write software, work with an API, and store it in a data store
 
 **Weather API**
 
-Write software that fetches weather data from the National Weather Service API 
-https://www.weather.gov/documentation/services-web-API and stores 
+Write software that fetches weather data from the National Weather Service 
+[API](https://www.weather.gov/documentation/services-web-API and stores)
 the data in a Redis Cache. After storing the data, get the data from the redis 
 cache and display some fields.
 
