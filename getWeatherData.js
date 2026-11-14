@@ -8,8 +8,12 @@ async function getWeatherData(lat, lon){
         const forecastUrl = response.data.properties.forecast;
         const forecastResponse = await axios.get(forecastUrl);
         const data = forecastResponse.data.properties.periods[0]; //Adjust as necessary
+        const city = response.data.properties.relativeLocation.properties.city;
+        const state = response.data.properties.relativeLocation.properties.state;
 
         const weatherData = {
+            city: city,
+            state: state,
             temperature: data.temperature, //Adjust based on actual API response
             humidity: data.relativeHumidity,
             shortForecast: data.shortForecast,
